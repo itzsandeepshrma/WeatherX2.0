@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #2d0052 0%, #0f001c 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.thunderstorm-active {
+  animation: lightning 1.2s ease-in-out infinite;
+}
+
+@keyframes lightning {
+  0%, 100% { background-color: #0f001c; }
+  10%, 30% { background-color: #ffffff; }
+  20%, 40% { background-color: #0f001c; }
+}
+
+.brand-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d200ff;
+  text-shadow: 0 0 10px #d200ff, 0 0 25px #9900cc;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 0, 255, 0.2);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+h2 {
+  margin: 12px 0;
+  font-size: 2.2rem;
+  color: #f5aaff;
+}
+
+.temp {
+  font-size: 4rem;
+  margin: 12px 0;
+  color: #fff1ff;
+}
+
+.desc {
+  font-size: 1.4rem;
+  color: #e0b3ff;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 14px;
+}
+
+.details div {
+  flex: 1 1 45%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 0, 255, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#localTime,
+#localDate {
+  font-size: 1.1rem;
+  color: #d199ff;
+  margin-top: 10px;
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  display: none;
+  color: #fff;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  color: #ae69ff;
+}
