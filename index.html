@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherX 2.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="brand-header">WeatherX 2.0</div>
+  <div class="weather-box">
+    <input type="text" id="cityInput" placeholder="Enter city name... (e.g. Delhi)" autofocus />
+    <h2 id="cityName">City Name</h2>
+    <div class="temp" id="temperature">--°C</div>
+    <div class="desc" id="description">Description</div>
+    <div class="details">
+      <div>💧 Humidity: <span id="humidity">--%</span></div>
+      <div>🌬 Wind: <span id="wind">-- km/h</span></div>
+      <div>🌧 Rain: <span id="rain">-- mm</span></div>
+      <div>❄️ Snow: <span id="snow">-- mm</span></div>
+      <div>🌫 Foggy: <span id="fog">--</span></div>
+      <div>☀️ Sunlight: <span id="sunlight">--</span></div>
+      <div>⛈️ Thunderstorm: <span id="thunder">--</span></div>
+      <div>⚡ Intensity: <span id="thunderLevel">--</span></div>
+    </div>
+    <div id="localDate">Local Date: --</div>
+    <div id="localTime">Local Time: --:--</div>
+  </div>
+  <div id="loading">Loading weather...</div>
+  <footer>
+    © 𝟤𝟢𝟤𝟧 sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ ᴧʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
